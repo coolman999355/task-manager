@@ -1,21 +1,31 @@
-# task-manager
+# Smart Scheduler
 
-This Python project allows users to create, manage, and track multiple schedules with automatic email reminders. Users can add schedules with a specific date and time, view all upcoming tasks, delete schedules, and receive email notifications 10 minutes before a scheduled task. All schedules are stored in a JSON file, making the data persistent across sessions.
+Smart Scheduler is a Python program that helps you organize tasks, send email reminders, and track deadlines.  
+It automatically emails you 10 minutes before a task and when the task deadline is reached.
 
-The program also includes a menu system for easy interaction, supports multiple schedules at once, and ensures that emails are sent only once per schedule.
+---
 
-Key Features:
+## Features
 
-Add schedules with name, date, and time.
-View all scheduled tasks with sent status.
-Delete schedules if needed.
-Automatic email reminders using SMTP (Gmail).
-Persistent storage in schedules.json.
-Safe handling of multiple schedules without repeating emails.
+- Add tasks with name, date, time, and deadline description  
+- Send email reminders 10 minutes before tasks  
+- Send email notifications when the task deadline arrives  
+- View all tasks with status indicators  
+- Delete tasks  
+- Runs in the background using threading  
 
-How it works:
+---
 
-Users add a schedule through a simple console menu.
-Each schedule is saved in a JSON file with a sent flag to track reminders.
-A loop continuously checks if it’s time to send a reminder.
-When a reminder is triggered, an email is sent, and the schedule is marked as sent.
+## Requirements
+
+- Python 3.8 or higher  
+- Gmail account with App Password enabled for sending emails  
+
+---
+
+## Installation and Usage
+
+1. Download the project from GitHub (click "Code" → "Download ZIP") and extract it.  
+2. Open the project folder.  
+3. Open a terminal or command prompt in that folder.  
+4. Run the program:
